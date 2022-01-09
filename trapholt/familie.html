@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/familie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Klub Trapholt Familie</title>
+</head>
+
+<body class="body">
+
+  <!--Skrevet af Helle-->
+
+  <nav>
+    <div class="outer-col-12 nav1">
+      <div class="inner-col-12 menu">
+        <div class="logo">
+          <a href="index.html">
+              <img src="img/8.png" alt="">
+          </a>
+      </div>
+      <ul class="nav-links">
+          <li>
+              <a href="udstillinger.html">Udstillinger</a>
+          </li>
+          <li>
+              <a href="familie.html">Familie</a>
+          </li>
+          <li>
+              <a href="omos.html">Om os</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="outer-col-12 mobilnav">
+      <div class="inner-col-12 mobil">
+        <ul class="mobillinks">
+          <li>
+              <a href="udstillinger.html">Udstillinger</a>
+          </li>
+          <li>
+              <a href="familie.html">Familie</a>
+          </li>
+          <li>
+              <a href="omos.html">Om os</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+
+</nav>
+
+  <div class="cover-image">
+    <div class="cover-text">
+      <h1 class="familieh1">Klub Trapholt Familie</h1>
+      <p class="cover-under">Kan I godt lide at være kreative? Så blive medlem af Klub Trapholt familie.</p>
+      <button onclick="myfunction()">Læs mere her</button>
+      <p id="demo"></p>
+
+      <script>
+        function myfunction() {
+          document.getElementById("demo").innerHTML = "Det er et medlemsskab, hvor børnene har mulighed for at komme og være kreativ 3 gange om ugen, og det de de laver, vil blive udstillet og herefter må de få det med hjem."
+        }
+      </script>
+    </div>
+  </div>
+
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+
+  <section class="current"></section>
+
+  <style>
+    .scroll-slow {
+      height: 50px;
+      overflow: hidden;
+      position: relative;
+      background: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .scroll-slow p {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Starting position */
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      /* Apply animation to this element */
+      -moz-animation: scroll-slow 25s linear infinite;
+      -webkit-animation: scroll-slow 25s linear infinite;
+      animation: scroll-slow 25s linear infinite;
+    }
+
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-slow {
+      0% {
+        -moz-transform: translateX(100%);
+      }
+
+      100% {
+        -moz-transform: translateX(-100%);
+      }
+    }
+
+    @-webkit-keyframes scroll-slow {
+      0% {
+        -webkit-transform: translateX(100%);
+      }
+
+      100% {
+        -webkit-transform: translateX(-100%);
+      }
+    }
+
+    @keyframes scroll-slow {
+      0% {
+        -moz-transform: translateX(100%);
+        /* Browser bug fix */
+        -webkit-transform: translateX(100%);
+        /* Browser bug fix */
+        transform: translateX(100%);
+      }
+
+      100% {
+        -moz-transform: translateX(-100%);
+        /* Browser bug fix */
+        -webkit-transform: translateX(-100%);
+        /* Browser bug fix */
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+
+  <div class="scroll-slow">
+    <p>NYHED! Børnekunst aktiviteterne starter fra januar | Verner Panton udstilling forlænger deres periode | </p>
+  </div>
+
+
+  <section class="bokse">
+    <div id="ww" class="outer-col-12 nyheder">
+
+      <div id="w1" class="inner-col-3">
+        <div class="container">
+          <img src="img/maling.jpg" alt="Avatar" class="image">
+          <h4>
+            <div class="w1-tekst">Hvad er prisen?</div>
+          </h4>
+          <div class="overlay">
+            <div class="text">Et års medlemsskab koster 400 kr.
+              Det er for en familie på 2 voksne og 2 børn
+              (50 kr. pr. ekstra barn)</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="w2" class="inner-col-3">
+        <div class="container">
+          <img src="img/pensel.jpg" alt="Avatar" class="image">
+          <h4>
+            <div class="w1-tekst">Hvad er inklusiv i prisen?</div>
+          </h4>
+          <div class="overlay">
+            <div class="text">Et helt års fri entré, kulturoplevelser, rabatter og alt materiale i krea-værkstedet.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="w3" class="inner-col-3">
+        <div class="container">
+          <img src="img/maling.jpg" alt="Avatar" class="image">
+
+          <h4>
+            <div class="w1-tekst">Hvornår er det?</div>
+          </h4>
+          <div class="overlay">
+            <div class="text">Krea-værkstedet har åben,
+              torsdag - fredag fra kl. 13-17
+              lørdag fra kl. 10-17
+              Dette foregår i kælderen og nogle gange er vi udenfor.</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="w4" class="inner-col-3">
+        <div class="container">
+          <img src="img/udstilling.jpg" alt="Avatar" class="image">
+
+          <h4>
+            <div class="w1-tekst">Hvornår kan man se udstillingen?</div>
+          </h4>
+          <div class="overlay">
+            <div class="text">Udstillingen kan ses den sidste uge hver måned.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <div class="heros-image">
+    <div class="heros-text">
+      <h1 class="kreah1">Krea-værkstedet!</h1>
+      <p class="heros-under">Kom og hver kreativ hver torsdag og fredag fra kl. 13-17<br>lørdag fra kl. 13-17 </p>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="contain">
+      <div class="row1">
+
+        <div id="Trapholt" class="inner-col-3">
+          <div class="footer-col-text">
+            <h2>Trapholt</h2>
+            <div class="info">
+              <ul>
+                <p>
+                  <li><a href="/omos.html">Om os</a></li>
+                  <li><a href="/familie.html">Klub Trapholt</a></li>
+                  <li><a href="/udstillinger.html">Udstillinger</a></li>
+                  <li><a href="/kontakt.html">Kontakt</a></li>
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="Trapholt" class="inner-col-3">
+          <div class="footer-col-text">
+            <h2>Åbningstider</h2>
+            <div class="info">
+              <ul>
+                <li>Mandag: <br>Lukket</li>
+                <li>Tirsdag-Søndag: <br>10:00 - 17:00</li>
+                <li>Onsdag: <br>10:00 - 21:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="Trapholt" class="inner-col-3">
+          <div class="footer-col-text">
+            <h2>Kontakt os</h2>
+            <div class="info">
+              <ul>
+                <li>+45 76 30 05 30</li>
+              </ul>
+              <ul>
+                <li>kunstmuseum@trapholt.dk</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="sociale-medier" class="inner-col-12">
+          <div class="footer-col-sm">
+            <h2>Find os her</h2>
+            <div class="sociale-medier">
+              <a href="https://www.facebook.com/trapholt.dk/" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/trapholt/" class="fa fa-instagram"></a>
+              <a href="https://www.linkedin.com/company/trapholt/" class="fa fa-linkedin"></a>
+              <a href="https://www.youtube.com/c/TrapholtART/featured" class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+    <button class="btn-primary" type="button" onclick="darkMode()">Dark / Light Mode</button>
+      m-1 : margin class for all side 1-5  + mx- and my-
+      p-1 : padding class for all side 1-5  + px- and py-
+      g-1 : gap class 1-5
+  </main>
+   <main>
+ 
+.col-$*12{$}*12 
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-2">col-2</div>
+    <div class="outer-col-3">col-3</div>
+    <div class="outer-col-4">col-4</div>
+    <div class="outer-col-5">col-5</div>
+    <div class="outer-col-6 p-1">col-6 p-1</div>
+    <div class="outer-col-7 p-2">col-7 p-3</div>
+    <div class="outer-col-8 p-3">col-8 p-3</div>
+    <div class="outer-col-9 p-4">col-9 p-4</div>
+    <div class="outer-col-10 p-5">col-10 p-5</div>
+    <div class="outer-col-11 m-1">col-11 m-1</div>
+    <div class="outer-col-12">
+        <div class="inner-col-6">inner-col-6</div>
+        <div class="inner-col-6 g-2">
+            <div class="inner-col-6">
+                <div class="inner-col-6">inner-col-6</div>
+                <div class="inner-col-6">inner-col-6</div>
+            </div>
+            <div class="inner-col-6">inner-col-6</div>
+        </div>
+    </div> 
+  </main>
+
+  <br>
+  <hr style="width:100%;">
+  <br>
+
+ 
+    .col-$*12{$}*12 
+  <section>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div> 
+  </section>
+
+  <div class="section-no">
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div> 
+  </div>
+
+
+  <main>
+    <div class="outer-col-12 g-4">
+      <div class="inner-col-8 primary-color">
+        <div class="first-one p-5">
+          <h1 class="py-2">Lorem Ipsum</h1>
+          <p>Details text goes here... Much nice!</p>
+        </div>
+      </div>
+      <div class="inner-col-4">
+        <img src="https://cdn.pixabay.com/photo/2021/09/24/20/59/jellyfish-6653502_1280.jpg" alt="">
+      </div>
+    </div>
+    <div class="outer-col-12">
+      <div class="inner-col-4">4</div>
+      <div class="inner-col-4">4</div>
+      <div class="inner-col-4">4</div>
+    </div>
+  </main>
+  -->
+  </main>
+</body>
+
+</html>

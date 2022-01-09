@@ -1,0 +1,407 @@
+@import 'config';
+@import 'typography'; // Heeeeyyy, im the typography, and also - luuucy im hooommmee!
+@import 'colors'; // just to be like da cool kids
+
+/* skrevet af Helle, Bjarne og Nanna*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+.body {
+  @media(max-width: 860px) {
+    padding: 4em 0 1em 0;
+  }
+}
+
+
+
+
+
+
+
+.footer-col-sm .nav {
+  height: 16.3vh;
+}
+
+//Første section herunder, med verner panton udstilling. Find evt. en måde, så alle H1 og H2 automatisk har display:flex; og Justify-content: Center; Men paragraf er til højre.
+// Dette vil spare en masse linjer af kode. 
+
+
+.frontpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 83.7vh;
+  font-weight: bold;
+}
+
+.fronttext {
+  height: 83.7vh;
+  font-weight: bold;
+}
+
+.animation {
+  height: 83.7vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+.boks1 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 1s;
+  transition: 1s;
+
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+}
+
+.boks1:hover {
+  background-image: url("../img/front2.jpg");
+  background-size: cover;
+  color: white;
+  transition: 1s;
+  animation: stuff 1s ease forwards;
+}
+
+.boks1:hover a {
+  color: white;
+}
+
+.boks2 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #F78527 !important;
+  opacity: 1;
+  background-size: cover;
+
+}
+
+.boks2:hover {
+  animation: stuff 1s ease forwards;
+  background-image: url("../img/Familie.JPG");
+}
+
+.boks2:hover a {
+  color: white;
+}
+
+@keyframes stuff {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.boks3 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boks3:hover {
+  background-image: url("../img/DSC00441.JPG");
+  animation: stuff 1s ease forwards;
+  background-size: cover;
+}
+
+.boks3:hover a {
+  color: white;
+}
+
+.boks4 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boks4:hover {
+  background-image: url("../img/helle.JPG");
+  background-size: cover;
+  animation: stuff 1s ease forwards;
+
+}
+
+.boks4:hover a {
+  color: white;
+}
+
+.kontakth2 a {
+  color: white;
+}
+
+.omosh2 a {
+  color: white;
+}
+
+.udstilingh2 a {
+  color: white;
+}
+
+.familieh2 a {
+  color: white;
+}
+
+#section1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.text1 {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image: url("../img/stole2.png");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.text4 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/vernerstol.JPG");
+  background-size: cover;
+  background-position-y: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.text3 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/vernergrøn.JPG");
+  background-size: cover;
+  background-position-y: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.verner1 {
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc,
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.verner3 {
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc,
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.verner4 {
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc,
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+
+}
+
+
+.verner1h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+  /* Safari */
+  text-decoration-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-style: wavy;
+}
+
+
+.verner3h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+  /* Safari */
+  text-decoration-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-style: wavy;
+}
+
+.verner4h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+  /* Safari */
+  text-decoration-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration-style: wavy;
+}
+
+.trapholtfamilie {
+  height: 100vh;
+}
+
+.text2 {
+  height: 100vh;
+  background-image: url("../img/familieorange.png");
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  color: white;
+}
+
+.familie {
+  height: 100vh;
+}
+
+
+#section3 {
+  height: 100vh;
+  display: flex;
+}
+
+.img3 {
+  background-image: url("../img/vernerpanton.jpg");
+  height: 800px;
+  width: 800px;
+  display: flex;
+  justify-self: center;
+}
+
+.container {
+  width: 100vw  !important;
+}
+
+
+/*sociale-medier START*/
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 0 10 10 0;
+  font-family: Helvetica, sans-serif;
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.sociale-medier {
+  display: flex;
+
+}
+
+.fa-facebook {
+  background: #000000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #000000;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #000000;
+  color: white;
+}
+
+.fa-youtube {
+  background: #000000;
+  color: white;
+}
+
+/*sociale-medier SLUT*/
+
+
+
+footer {
+  width: auto;
+}
+
+.row1 {
+  width: auto;
+  display: flex;
+
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+}
+
+.footer-col-text {
+  width: 200px;
+  height: 310px;
+  margin: 20px;
+  font-size: 15px;
+  font-family: helvetica, sans-serif
+}
+
+.footer-col-sm {
+  width: 200px;
+  height: 310px;
+  margin: 20px;
+  font-size: 15px;
+  font-family: helvetica, sans-serif;
+}
+
+.footer-col-text a {
+  color: #000000
+}
+
+
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';
+/*
+Author: Kristian Wittrup, 2021
+*/

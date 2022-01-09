@@ -1,0 +1,50 @@
+&.dark { // swicthing dark/light mode
+
+  @for $i from 1 through $grid-columns {
+    .col-#{$i} {
+      background-color: #444;  // switch for dark mode
+    }
+  }
+
+  background-color: $secondary-color;
+  color: darken($light-color, 20%);
+
+  header {
+    background-color: $secondary-color;
+    nav {
+ 
+      a {
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  // switches color on all elements with the class "outer-col-" and "inner-col-"
+  [class^="outer-col-"] {
+    background-color: lighten($secondary-color, 20%);
+  }
+  [class^="inner-col-"] {
+    background-color: lighten($secondary-color, 20%);
+  }
+
+  // switch color, etc on buttons
+  .btn-primary {
+    @extend %btn;
+    background-color:lighten($secondary-color, 5%);
+    color: darken($light-color, 20%);
+  }
+  
+  .btn-secondary {
+    @extend %btn;
+    background-color:lighten($primary-color, 10%)   ;
+    color: $secondary-color;
+  }
+
+
+  // Anchor color :: all. (Navigation has its own)
+  a {
+    color: darken($light-color, 20%);
+  }
+}

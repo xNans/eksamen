@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/main.js"></script>
+  <title>Forside</title>
+</head>
+
+<!--Skrevet af Helle, Bjarne og Nanna-->
+
+<body class="body">
+
+
+  <main>
+    <nav>
+      <div class="outer-col-12 nav1">
+        <div class="inner-col-12 menu">
+          <div class="logo">
+            <a href="index.html">
+                <img src="img/8.png" alt="">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="udstillinger.html">Udstillinger</a>
+            </li>
+            <li>
+                <a href="familie.html">Familie</a>
+            </li>
+            <li>
+                <a href="omos.html">Om os</a>
+            </li>
+            <li>
+              <a href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="outer-col-12 mobilnav">
+        <div class="inner-col-12 mobil">
+          <ul class="mobillinks">
+            <li>
+                <a href="udstillinger.html">Udstillinger</a>
+            </li>
+            <li>
+                <a href="familie.html">Familie</a>
+            </li>
+            <li>
+                <a href="omos.html">Om os</a>
+            </li>
+            <li>
+              <a href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+
+  </nav>
+
+
+    <body>
+      <section class="frontpage">
+        <div class="outer-col-12">
+
+          <div class="inner-col-12 animation">
+            <video autoplay muted>
+              <source src="img/Trapholt bygning_2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .scroll-slow {
+          height: 50px;
+          overflow: hidden;
+          position: relative;
+          background: rgb(0, 0, 0);
+          color: rgb(255, 255, 255);
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .scroll-slow p {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          line-height: 50px;
+          text-align: center;
+          /* Starting position */
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          /* Apply animation to this element */
+          -moz-animation: scroll-slow 25s linear infinite;
+          -webkit-animation: scroll-slow 25s linear infinite;
+          animation: scroll-slow 25s linear infinite;
+        }
+
+        /* Move it (define the animation) */
+        @-moz-keyframes scroll-slow {
+          0% {
+            -moz-transform: translateX(100%);
+          }
+
+          100% {
+            -moz-transform: translateX(-100%);
+          }
+        }
+
+        @-webkit-keyframes scroll-slow {
+          0% {
+            -webkit-transform: translateX(100%);
+          }
+
+          100% {
+            -webkit-transform: translateX(-100%);
+          }
+        }
+
+        @keyframes scroll-slow {
+          0% {
+            -moz-transform: translateX(100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(100%);
+            /* Browser bug fix */
+            transform: translateX(100%);
+          }
+
+          100% {
+            -moz-transform: translateX(-100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(-100%);
+            /* Browser bug fix */
+            transform: translateX(-100%);
+          }
+        }
+      </style>
+
+      <div class="scroll-slow">
+        <p>NYHED! Børnekunst aktiviteterne starter fra januar | Verner Panton udstilling forlænger deres periode | </p>
+      </div>
+      </section>
+      <section class="bokse">
+        <div class="outer-col-12 section4">
+          <div id="4bokse1" class="inner-col-6 primary-color boks1">
+            <h2 class="udstilingh2"><a href="udstillinger.html">Udstillinger</a></h2>
+          </div>
+          <div id="4bokse2" class="inner-col-6 farve-orange boks2">
+            <h2 class="familieh2"><a href="familie.html">Klub Trapholt Familie</a></h2>
+          </div>
+        </div>
+        <div class="outer-col-12 section5">
+          <div id="4bokse3" class="inner-col-6 tertiary-color boks3">
+            <h2 class="omosh2"><a href="omos.html">Om Trapholt</a></h2>
+          </div>
+          <div id="4bokse4" class="inner-col-6 secondary-color boks4">
+            <h2 class="kontakth2"><a href="kontakt.html">Kontakt</a></h2>
+          </div>
+        </div>
+      </section>
+
+      <div class="vernerpanton1">
+        <div id="1text" class="inner-col-4 text1">
+          <div>
+            <h2 class="verner1h2">Panton's design</h2>
+            <p class="verner1">verner panton arbejdede med design af rum, møbler, belysning og meget mere.
+              <br>
+              <br>
+              ved at han
+              eksperimenterede
+              med
+              nye former, stærke farver og en rumlig dialog appelerede han på en direkte måde til vores sanser og
+              fantasi
+            </p>
+          </div>
+        </div>
+
+        <div class="vernerpanton3">
+          <div id="3text" class="inner-col-12 text3">
+            <div>
+              <h2 class="verner3h2">Panton's liv</h2>
+              <p class="verner3"> en af de mest toneangivende designere i 1960'erne i europa. uddannet
+                på
+                kunstakademiets
+                arkitektskole 1947-1951.
+                <br>
+                <br>
+                han lærte under arne jacobsen i 1950-52
+                <br>
+                i 1955 åbnede han sin egen tegnestue
+                <br>
+                <br>
+                han boede de sidste år af sit liv i schweiz, han var særlig aktiv i udlandet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="vernerpanton4">
+          <div id="4text" class="inner-col-12 text4">
+            <div>
+              <h2 class="verner4h2">Panton's indflydelse</h2>
+              <p class="verner4">Panton var berømt for sin inspirende og farverige personlighed.
+                <br>
+                <br>
+                han introducerede bla. en række møbler
+                <br>som man kunne mærke havde en personlighed og var helt anderledes
+                end dem fra hans samtidige skandinaviske designere.
+                <br>
+                <br>
+                med tro på uendelige muligheder indenfor former arbejdede
+                han hårdt på at udvikle nye teorier om lysets funktioner og dets indflydelse på design
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="containerbox">
+        <div class="container">
+          <h2>Aktivitetsplan for det nye år</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+              <li data-target="#myCarousel" data-slide-to="8"></li>
+              <li data-target="#myCarousel" data-slide-to="9"></li>
+              <li data-target="#myCarousel" data-slide-to="10"></li>
+              <li data-target="#myCarousel" data-slide-to="11"></li>
+              <li data-target="#myCarousel" data-slide-to="12"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <h2>AKTIVITETER 2022</h2>
+                <img src="img/new-year-6825552_640.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>Januar - Genbrug og kunst
+                  Krea-aktivitet: Byg en skulptur af genbrug
+                </h2>
+                <img src="img/miljø.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>Februar - Oliemaleri
+                  Krea-aktivitet: Lav din egen maleri</h2>
+                <img src="img/oliemaling.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>Marts - Træ
+                  Krea-aktivitet: Vi leger med ispinde</h2>
+                <img src="img/ispind.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>April - Forårs tema
+                  Krea-aktivitet: Fod og- fingermaling</h2>
+                <img src="img/fingermaling.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>Maj - Tekstiler
+                  Krea-aktivitet: Sjov tryk på stof
+                </h2>
+                <img src="img/Tekstiler.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>Juni - Arkitektur
+                  Krea-aktivitet: Fold og byg med karton
+                </h2>
+                <img src="img/pap.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>Juli - Doodle
+                  Krea-aktivitet: Farver og streger på store ark</h2>
+                <img src="img/doodle.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>August - Mad
+                  Krea-aktivitet: Pasta kunst </h2>
+                <img src="img/pastakunst.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>September - Ler værk
+                  Krea-aktivitet: Form din egen skulptur</h2>
+                <img src="img/lerværk.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>Oktober - Gys og guf
+                  Krea-aktivitet: Noget med græskar
+                </h2>
+                <img src="img/græskar.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>November - Efterårs tema med farver og natur
+                  Krea-aktivitet: Kunst med blade og andet fra naturen</h2>
+                <img src="img/natur.jpg" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <h2>December - Jul og nisser
+                  Krea-aktivitet: lav noget kunst med Juleklip</h2>
+                <img src="img/juleklip.jpg" style="width:100%;">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="contain">
+          <div class="row1">
+
+            <div id="Trapholt" class="inner-col-3">
+              <div class="footer-col-text">
+                <h2>Trapholt</h2>
+                <div class="info">
+                  <ul>
+                    <li><a href="/omos.html">Om os</a></li>
+                    <li><a href="/familie.html">Klub Trapholt</a></li>
+                    <li><a href="/udstillinger.html">Udstillinger</a></li>
+                    <li><a href="/kontakt.html">Kontakt</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="Trapholt" class="inner-col-3">
+              <div class="footer-col-text">
+                <h2>Åbningstider</h2>
+                <div class="info">
+                  <ul>
+                    <li>Mandag: <br>Lukket</li>
+                    <li>Tirsdag-Søndag: <br>10:00 - 17:00</li>
+                    <li>Onsdag: <br>10:00 - 21:00</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="Trapholt" class="inner-col-3">
+              <div class="footer-col-text">
+                <h2>Kontakt os</h2>
+                <div class="info">
+                  <ul>
+                    <li>+45 76 30 05 30</li>
+                  </ul>
+                  <ul>
+                    <li>kunstmuseum@trapholt.dk</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="sociale-medier" class="inner-col-12">
+              <div class="footer-col-sm">
+                <h2>Find os her</h2>
+                <div class="sociale-medier">
+                  <a href="https://www.facebook.com/trapholt.dk/" class="fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/trapholt/" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/company/trapholt/" class="fa fa-linkedin"></a>
+                  <a href="https://www.youtube.com/c/TrapholtART/featured" class="fa fa-youtube"></a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        </div>
+
+        </div>
+      </footer>
+
+    </body>
+
+
+
+    <!-- 
+      m-1 : margin class for all side 1-5  + mx- and my-
+      p-1 : padding class for all side 1-5  + px- and py-
+      g-1 : gap class 1-5
+    -->
+  </main>
+
+  <main>
+
+    <!-- .col-$*12{$}*12  
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-2">col-2</div>
+    <div class="outer-col-3">col-3</div>
+    <div class="outer-col-4">col-4</div>
+    <div class="outer-col-5">col-5</div>
+    <div class="outer-col-6 p-1">col-6 p-1</div>
+    <div class="outer-col-7 p-2">col-7 p-3</div>
+    <div class="outer-col-8 p-3">col-8 p-3</div>
+    <div class="outer-col-9 p-4">col-9 p-4</div>
+    <div class="outer-col-10 p-5">col-10 p-5</div>
+    <div class="outer-col-11 m-1">col-11 m-1</div>
+    <div class="outer-col-12">
+        <div class="inner-col-6">inner-col-6</div>
+        <div class="inner-col-6 g-2">
+            <div class="inner-col-6">
+                <div class="inner-col-6">inner-col-6</div>
+                <div class="inner-col-6">inner-col-6</div>
+            </div>
+            <div class="inner-col-6">inner-col-6</div>
+        </div>
+    </div> 
+  </main>
+
+  <br>
+  <hr style="width:100%;">
+  <br>
+
+ 
+   .col-$*12{$}*12 
+  <section>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div> 
+  </section>
+
+  <div class="section-no">
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div> 
+  </div>
+
+
+  <main>
+    <div class="outer-col-12 g-4">
+      <div class="inner-col-8 primary-color">
+        <div class="first-one p-5">
+          <h1 class="py-2">Lorem Ipsum</h1>
+          <p>Details text goes here... Much nice!</p>
+        </div>
+      </div>
+      <div class="inner-col-4">
+        <img src="https://cdn.pixabay.com/photo/2021/09/24/20/59/jellyfish-6653502_1280.jpg" alt=">
+      </div>
+    </div>
+    <div class="outer-col-12">
+      <div class="inner-col-4">4</div>
+      <div class="inner-col-4">4</div>
+      <div class="inner-col-4">4</div>
+    </div>
+  </main>
+  -->
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+@import 'config';
+@import 'typography'; // Heeeeyyy, im the typography, and also - luuucy im hooommmee!
+@import 'colors'; // just to be like da cool kids
+
+
+/*Skrevet af Hjalte*/
+
+$green:#4c00ff;
+$black: #000000;
+
+@mixin box() {
+    outline: none;
+    border: none;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact {
+    height: auto;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url("/img/billede9.png");
+    background-size: 70% 10rem;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-transform: uppercase;
+
+    h1 {
+        margin: 10rem 0;
+        font-size: 2.5rem;
+        text-align: center;
+
+        span {
+            color: $green;
+            font-style: italic;
+        }
+
+    }
+
+    .contact-container {
+        width: 90vw;
+
+        form {
+
+            .column {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(25rem, 1fr));
+                grid-gap: 2rem;
+
+                .box {
+                    @include box();
+                    height: 4rem;
+                    padding: 0 2rem;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+
+                }
+            }
+
+            .msg-box {
+                width: 100%;
+                resize: none;
+                height: 10rem;
+                padding: 1rem 2rem;
+                margin-top: 2rem;
+                @include box();
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+
+        input[type="submit"] {
+            @include box();
+            padding: 1rem 2rem;
+            margin: 2rem 0;
+            background: #4c00ff;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(219, 52, 130);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 680px) {
+    #contact {
+        flex-wrap: wrap;
+
+        .contact-container {
+            form {
+                .column {
+                    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                }
+            }
+        }
+    }
+}
+
+
+
+body {
+    background-color: rgb(255, 253, 253);
+}
+
+
+h1 {
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-top: 5px solid rgb(0, 0, 0);
+}
+
+
+/*sociale-medier START*/
+.fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 0 10 10 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.sociale-medier {
+    display: flex;
+}
+
+.fa-facebook {
+    background: #000000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #000000;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #000000;
+    color: white;
+}
+
+.fa-youtube {
+    background: #000000;
+    color: white;
+}
+
+/*sociale-medier SLUT*/
+
+
+
+footer {
+    width: auto;
+
+}
+
+.row1 {
+    width: auto;
+    display: flex;
+
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+
+.footer-col-text {
+    width: 200px;
+    height: 310px;
+    margin: 20px;
+    font-size: 15px;
+    font-family: helvetica, sans-serif
+}
+
+.footer-col-sm {
+    width: 200px;
+    height: 310px;
+    margin: 20px;
+    font-size: 15px;
+    font-family: helvetica, sans-serif
+}
+
+.footer-col-text a {
+    color: #000000
+}
+
+#logo a:hover::before {
+    transform: scaleX(1);
+}
+
+@import 'utilities';
+@import 'buttons';
+@import 'mobile';

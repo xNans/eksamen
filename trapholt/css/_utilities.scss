@@ -1,0 +1,103 @@
+// Margin & padding classes
+$amountOfSpacers: (0, 1, 2, 3, 4, 5);
+
+@each $spacer in $amountOfSpacers {
+
+  // margin
+  .m-#{$spacer} {
+    margin: calc(#{$spacer}px * 4);
+  }
+
+  .mx-#{$spacer} {
+    // Added mx 
+    margin: 0 calc(#{$spacer}px * 4);
+  }
+
+  .my-#{$spacer} {
+    margin: calc(#{$spacer}px * 4) 0;
+  }
+
+  // padding
+  .p-#{$spacer} {
+    padding: calc(#{$spacer}px * 4);
+  }
+
+  .px-#{$spacer} {
+    // Added px 
+    padding: 0 calc(#{$spacer}px * 4)
+  }
+
+  .py-#{$spacer} {
+    padding: calc(#{$spacer}px * 4) 0;
+  }
+
+  // gutter
+  .g-#{$spacer} {
+    gap: calc(#{$spacer}px * 4) !important;
+  }
+}
+
+.menu {
+  background-image: linear-gradient(to bottom right, #103b9fa9,#fb329aad);
+  display: flex;
+  align-items: center;
+  height: 16.7vh;
+  padding-left: 50px;
+  justify-content: space-around;
+
+}
+ 
+.logo img {
+  height: 16.7vh;
+}
+
+
+.nav-links{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a{
+  color:#000000;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  top: 25px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.nav-links a:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 1200px){
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/omos.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Om Trapholt</title>
+</head>
+
+<!--Skrevet af Bjarne-->
+
+<section>
+  <nav>
+    <div class="outer-col-12 nav1">
+      <div class="inner-col-12 menu">
+        <div class="logo">
+          <a href="index.html">
+              <img src="img/8.png" alt="">
+          </a>
+      </div>
+      <ul class="nav-links">
+          <li>
+              <a href="udstillinger.html">Udstillinger</a>
+          </li>
+          <li>
+              <a href="familie.html">Familie</a>
+          </li>
+          <li>
+              <a href="omos.html">Om os</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="outer-col-12 mobilnav">
+      <div class="inner-col-12 mobil">
+        <ul class="mobillinks">
+          <li>
+              <a href="udstillinger.html">Udstillinger</a>
+          </li>
+          <li>
+              <a href="familie.html">Familie</a>
+          </li>
+          <li>
+              <a href="omos.html">Om os</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+</nav>
+
+  <body>
+    <section class="frontpage">
+      <div class="cover-image">
+        <div class="cover-text">
+          <h1 class="historie">Trapholt historie</h1>
+          <p class="cover-under">interesset i at vide mere om vores historie?</p>
+          <button onclick="myfunction()">Læs mere her</button>
+          <p id="demo"></p>
+
+          <script>
+            function myfunction() {
+              document.getElementById("demo").innerHTML = "Trapholt er et nationalt kulturelt fyrtårn i designbyen Kolding, som er medlem af UNESCO's Creative Cities Network Museets arkitektur udgør i sig selv en attraktion.Bygget op omkring den centrale museumsgade åbner udstillingslokalerne for spændende rumlige oplevelser.Udenfor står den kraftige, skulpturelle mur, der afgrænser museet til en stor skulpturpark med værker af danske samtidskunstnere. nedenstående har vi lavet en tidslinje over trapholts historie så du læse om vores historie på en simpel og overskuelig måde Vores guidede ture på mueseet giver også lidt ekstra fylde på historien bag Trapholt."
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+    <style>
+      .scroll-slow {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: Helvetica, sans-serif;
+      }
+
+      .scroll-slow p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Starting position */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        /* Apply animation to this element */
+        -moz-animation: scroll-slow 25s linear infinite;
+        -webkit-animation: scroll-slow 25s linear infinite;
+        animation: scroll-slow 25s linear infinite;
+      }
+
+      /* Move it (define the animation) */
+      @-moz-keyframes scroll-slow {
+        0% {
+          -moz-transform: translateX(100%);
+        }
+
+        100% {
+          -moz-transform: translateX(-100%);
+        }
+      }
+
+      @-webkit-keyframes scroll-slow {
+        0% {
+          -webkit-transform: translateX(100%);
+        }
+
+        100% {
+          -webkit-transform: translateX(-100%);
+        }
+      }
+
+      @keyframes scroll-slow {
+        0% {
+          -moz-transform: translateX(100%);
+          /* Browser bug fix */
+          -webkit-transform: translateX(100%);
+          /* Browser bug fix */
+          transform: translateX(100%);
+        }
+
+        100% {
+          -moz-transform: translateX(-100%);
+          /* Browser bug fix */
+          -webkit-transform: translateX(-100%);
+          /* Browser bug fix */
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+
+
+    <!-- The Timeline -->
+
+    <ul class="timeline">
+
+      <!-- Item 1 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">trapholt fond oprettes</span>
+            <span class="time-wrapper"><span class="time">1972</span></span>
+          </div>
+          <div class="desc">
+            i 1972 opretter Helene og Gustav johannes lind trapholtfonden. ved oprettelsen af fonden foreære
+            de kolding kommune 23 tønde jord mod at kommunen forpligter sig til at oprette et kunstmuseum på
+            trapholt og yder fonden årligt tilskud. Helene Lind dør 8. april 1980 og Gustav Lind dør 20. juni
+            1984, ingen af dem når at se trapholt blive indviet
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 2 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">Trapholt bliver indviet</span>
+            <span class="time-wrapper"><span class="time">1988</span></span>
+          </div>
+          <div class="desc">
+            Trapholts kunstsamling på ca. 6000 værker har afsæt i Kolding Kunstforenings samling, som
+            Trapholt
+            overtog ved åbningen af museet i 1988. Samlingen dækker kunst fra 1900 og frem, og har en tyngde
+            inden
+            for den figurative og abstrakte tradition med ældre værker af blandt andet Richard Mortensen,
+            Asger
+            Jorn og Anna Ancher.
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 3 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">trapholt bliver udvidet</span>
+            <span class="time-wrapper"><span class="time">1996</span></span>
+          </div>
+          <div class="desc">
+            I 1996 udvidedes Trapholt ved Boje Lundgaard med en udstillingshal, det underjordiske
+            Møbelmuseet
+            med dansk møbeldesign samt en ca. 100 m lang mur og en skulpturhave, udformet i samarbejde med
+            billedkunstneren Finn Reinbothe
+          </div>
+        </div>
+      </li>
+
+
+      <!-- Item 4 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">verner panton "Lyset og Farven</span>
+            <span class="time-wrapper"><span class="time">1998</span></span>
+          </div>
+          <div class="desc">
+            I installationen Lyset og Farven, som Verner Panton skabte til en udstilling på Trapholt i 1998,
+            føres man gennem otte rum, der med hver deres farvetema tilbyder en nærværende og sanserig
+            oplevelse
+            der gør, at man mærker kropsligt, hvordan hver enkelt farve fysisk påvirker ens velvære.
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">Arne jacobsens sommerhus</span>
+            <span class="time-wrapper"><span class="time">2005</span></span>
+          </div>
+          <div class="desc">
+            Arne jacobsen tegnede i 1969-1970 kubeflex, et summerhus han var i gang med at designe. Arne
+            Jacobsen
+            dør desværre i 1971 og summerhuset kommer aldrig i produktion. intil 2002 har hans familie selv
+            brugt
+            huset som sommerbolig, og bygningen har siden 2005 hørt til trapholt. det er det eneste af sin
+            slags
+            og indrettet med Arne Jacobsen design
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+    <footer>
+      <div class="contain">
+        <div class="row1">
+
+          <div id="Trapholt" class="inner-col-3">
+            <div class="footer-col-text">
+              <h2>Trapholt</h2>
+              <div class="info">
+                <ul>
+                  <p>
+                    <li><a href="omos.html">Om os</a></li>
+                    <li><a href="familie.html">Klub Trapholt</a></li>
+                    <li><a href="udstillinger.html">Udstillinger</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="Trapholt" class="inner-col-3">
+            <div class="footer-col-text">
+              <h2>Åbningstider</h2>
+              <div class="info">
+                <ul>
+                  <li>Mandag: <br>Lukket</li>
+                  <li>Tirsdag-Søndag: <br>10:00 - 17:00</li>
+                  <li>Onsdag: <br>10:00 - 21:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="Trapholt" class="inner-col-3">
+            <div class="footer-col-text">
+              <h2>Kontakt os</h2>
+              <div class="info">
+                <ul>
+                  <li>+45 76 30 05 30</li>
+                </ul>
+                <ul>
+                  <li>kunstmuseum@trapholt.dk</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="sociale-medier" class="inner-col-12">
+            <div class="footer-col-sm">
+              <h2>Find os her</h2>
+              <div class="sociale-medier">
+                <a href="https://www.facebook.com/trapholt.dk/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/trapholt/" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/company/trapholt/" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/c/TrapholtART/featured" class="fa fa-youtube"></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </footer>
+    <!-- /
+        Kühn-Nielsen, Peter: Trapholt i Den Store Danske på lex.dk. Hentet 13. december 2021 fra https://denstoredanske.lex.dk/Trapholt 
+      m-1 : margin class for all side 1-5  + mx- and my-
+      p-1 : padding class for all side 1-5  + px- and py-
+      g-1 : gap class 1-5
+    -->
+    </main>
+
+    <main>
+
+      <!-- .col-$*12{$}*12  
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-2">col-2</div>
+    <div class="outer-col-3">col-3</div>
+    <div class="outer-col-4">col-4</div>
+    <div class="outer-col-5">col-5</div>
+    <div class="outer-col-6 p-1">col-6 p-1</div>
+    <div class="outer-col-7 p-2">col-7 p-3</div>
+    <div class="outer-col-8 p-3">col-8 p-3</div>
+    <div class="outer-col-9 p-4">col-9 p-4</div>
+    <div class="outer-col-10 p-5">col-10 p-5</div>
+    <div class="outer-col-11 m-1">col-11 m-1</div>
+    <div class="outer-col-12">
+        <div class="inner-col-6">inner-col-6</div>
+        <div class="inner-col-6 g-2">
+            <div class="inner-col-6">
+                <div class="inner-col-6">inner-col-6</div>
+                <div class="inner-col-6">inner-col-6</div>
+            </div>
+            <div class="inner-col-6">inner-col-6</div>
+        </div>
+    </div> 
+  </main>
+
+  <br>
+  <hr style="width:100%;">
+  <br>
+
+ 
+   .col-$*12{$}*12 
+  <section>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div>
+    <div class="outer-col-1">col-1</div> 
+  </section>
+
+  <div class="section-no">
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div>
+    <div class="outer-col-no-1">col-1</div> 
+  </div>
+
+
+  <main>
+    <div class="outer-col-12 g-4">
+      <div class="inner-col-8 primary-color">
+        <div class="first-one p-5">
+          <h1 class="py-2">Lorem Ipsum</h1>
+          <p>Details text goes here... Much nice!</p>
+        </div>
+      </div>
+      <div class="inner-col-4">
+        <img src="https://cdn.pixabay.com/photo/2021/09/24/20/59/jellyfish-6653502_1280.jpg" alt="">
+      </div>
+    </div>
+    <div class="outer-col-12">
+      <div class="inner-col-4">4</div>
+      <div class="inner-col-4">4</div>
+      <div class="inner-col-4">4</div>
+    </div>
+  </main>
+  -->
+  </body>
+
+</html>

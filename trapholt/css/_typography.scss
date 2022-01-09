@@ -1,0 +1,35 @@
+$font-stack: Arial,
+Helvetica,
+sans-serif;
+
+h1 {
+  font-size: 50px;
+  display: flex;
+  justify-self: center;
+  letter-spacing: 5px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: verdana, sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Verdana, sans-serif;
+}
+
+h4 {
+  font-family: Verdana, sans-serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif
+}
