@@ -10,6 +10,15 @@
   padding: 0px;
 }
 
+.mobile-container {
+  width: auto;
+}
+
+.top-nav {
+  width: auto;
+}
+
+
 .front {
   height: 100vh;
   display: flex;
@@ -94,15 +103,15 @@
   justify-content: center;
   align-items: center;
   gap: 35px;
-  height: 100vh;
   background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 
 .nyhed1 {
-  height: fit-content;
   flex-direction: column;
-  width: fit-content;
+  width: 500px;
 }
 
 .nyhed12 {
@@ -141,9 +150,8 @@
 
 
 .nyhed2 {
-  height: fit-content;
   flex-direction: column;
-  width: fit-content;
+  width: 500px;
 }
 
 .nyhed22 {
@@ -180,9 +188,8 @@
 }
 
 .nyhed3 {
-  height: fit-content;
   flex-direction: column;
-  width: fit-content;
+  width: 500px;
 }
 
 .nyhed32 {
@@ -220,11 +227,13 @@
   color: #000000;
 }
 
-@media screen and (max-width: 1000px){
-  .nyheder {
-    display: flex;
-    flex-wrap:wrap
+@media screen and (max-width: 700px){
+  .bokse {
+    flex-direction: column;
+    height: auto;
   }
+
+
 }
 
 /*sociale-medier START*/
@@ -294,7 +303,7 @@ ul {
 
 .footer-col-text {
   width: 200px;
-  height: 310px;
+ 
   margin: 20px;
   font-size: 15px;
   font-family: helvetica, sans-serif
@@ -302,7 +311,7 @@ ul {
 
 .footer-col-sm {
   width: 200px;
-  height: 310px;
+ 
   margin: 20px;
   font-size: 15px;
   font-family: helvetica, sans-serif
@@ -311,6 +320,8 @@ ul {
 .footer-col-text a {
   color: #000000
 }
+
+
 
 
 

@@ -399,13 +399,6 @@ body {
 
 
 
-footer {
-  @media(max-width: 680px) {
-    width: 100%;
-    padding: 4em 0 1em 0;
-  }
-}
-
 .row1 {
   width: auto;
   display: flex;
@@ -420,7 +413,6 @@ ul {
 
 .footer-col-text {
   width: 200px;
-  height: 310px;
   margin: 20px;
   font-size: 15px;
   font-family: helvetica, sans-serif
@@ -428,7 +420,6 @@ ul {
 
 .footer-col-sm {
   width: 200px;
-  height: 310px;
   margin: 20px;
   font-size: 15px;
   font-family: helvetica, sans-serif

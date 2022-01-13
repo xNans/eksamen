@@ -119,7 +119,6 @@ a.button {
 
 }
 
-
 .boks3 {
   height: 50vh;
   display: flex;
@@ -200,7 +199,6 @@ a.button {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
-  margin: 10px;
 }
 
 .text3 {
@@ -317,142 +315,6 @@ a.button {
 }
 
 
-/*shop start*/
-.shop {
-  display: flex;
-  margin: 10px;
-}
-
-.image-shop {
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.text-shop {
-  font-size: 20px;
-  padding-left: 20px;
-  padding: 20px;
-}
-/*shop slut*/ 
-
-/*shop knap*/
-.text-shop button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #f19c3b;
-  text-align: center;
-  cursor: pointer;
-  margin: 15px;
-  font-size: 20px;
-  font-family: helvetica, sans-serif;
-  height: 50px;
-  width: 200px;
-}
-
-.text-shop button:hover {
-  background-color: #555;
-  color: white;
-}
-
-
-/*shop knap slut*/
-
-
-/*cafe start*/
-.cafe {
-  display: flex;
-  margin: 10px;
-}
-
-.image-cafe {
-  justify-items: center;
-  margin-top: 20px;
-}
-
-.text-cafe {
-  font-size: 20px;
-  padding-right: 20px;
-  padding: 20px;
-}
-/*cafe slut*/ 
-
-/*cafe knap*/
-.text-cafe button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #f19c3b;
-  text-align: center;
-  cursor: pointer;
-  margin: 15px;
-  font-size: 20px;
-  font-family: helvetica, sans-serif;
-  height: 50px;
-  width: 200px;
-}
-
-.text-cafe button:hover {
-  background-color: #555;
-  color: white;
-}
-/*CAFE knap slut*/
-
-
-.overall-a {
-  display: flex;
-  margin: 5px;
-}
-
-.aktivitet {
-  position: relative;
-  background-color: dimgrey;
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  margin: 5px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.aktivitet:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 12px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-
-
-
-
-
-
 /*sociale-medier START*/
 .fa {
   padding: 20px;
@@ -517,7 +379,6 @@ ul {
 
 .footer-col-text {
   width: 200px;
-  height: 310px;
   margin: 20px;
   font-size: 15px;
   font-family: helvetica, sans-serif
@@ -525,7 +386,6 @@ ul {
 
 .footer-col-sm {
   width: 200px;
-  height: 310px;
   margin: 20px;
   font-size: 15px;
   font-family: helvetica, sans-serif;
