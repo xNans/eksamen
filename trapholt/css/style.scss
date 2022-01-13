@@ -314,7 +314,13 @@ a.button {
   width: 100vw  !important;
 }
 
-
+/*shop start*/
+.shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
 
 .image-shop {
   justify-items: center;
