@@ -315,6 +315,125 @@ a.button {
 }
 
 
+
+.image-shop {
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.text-shop {
+@ -831,6 +832,8 @@ a.button {
+  margin: 15px;
+  font-size: 20px;
+  font-family: helvetica, sans-serif;
+  height: 50px;
+  width: 200px;
+}
+
+.text-shop button:hover {
+@ -839,6 +842,49 @@ a.button {
+}
+/*shop knap slut*/
+
+/*cafe start*/
+.cafe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.image-cafe {
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.text-cafe {
+  font-size: 20px;
+  padding-right: 20px;
+  padding: 20px;
+}
+/*cafe slut*/
+
+/*cafe knap*/
+.text-cafe button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #f19c3b;
+  text-align: center;
+  cursor: pointer;
+  margin: 15px;
+  font-size: 20px;
+  font-family: helvetica, sans-serif;
+  height: 50px;
+  width: 200px;
+}
+
+.text-cafe button:hover {
+  background-color: #555;
+  color: white;
+}
+/*CAFE knap slut*/
+
+
+
+
+
+
+/*aktivitetsplan*/
+.overall-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+}
+
+.aktivitet {
+  position: relative;
+  background-color: dimgrey;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  margin: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.aktivitet:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
 /*sociale-medier START*/
 .fa {
   padding: 20px;
